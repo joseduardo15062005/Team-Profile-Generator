@@ -23,7 +23,7 @@ test("email is a valid email", () => {
 test("Method getName() return the Employee Name", () => {
   const employee = new Employee("Jose", 1);
 
-  expect(employee.getName()).toBe("Jose");
+  expect(employee.getName()).toBe(employee.name);
 });
 
 test("Method getId() return the Employee Id", () => {
