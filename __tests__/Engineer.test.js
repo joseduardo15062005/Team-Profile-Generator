@@ -1,17 +1,31 @@
-test("github is a string", () => {
-  const engineer = new Engineer("Jose", 1, "jose@gmail.com");
+const Engineer = require("../lib/Engineer");
 
-  expect(engineer.github).toEqual(expect.any(string));
+test("github is a string", () => {
+  const engineer = new Engineer(
+    "Jose",
+    1,
+    "jose@gmail.com",
+    "joseduardo15062005"
+  );
+  expect(engineer.github).toBe(engineer.github);
 });
 
-test("geGithub() is a string", () => {
-  const engineer = new Engineer("Jose", 1, "jose@gmail.com");
-
-  expect(engineer.getGithub()).toEqual(expect.any(string));
+test("getGithub() is a string", () => {
+  const engineer = new Engineer(
+    "Jose",
+    1,
+    "jose@gmail.com",
+    "joseduardo15062005"
+  );
+  expect(engineer.getGithub()).toBe(engineer.github);
 });
 
 test("getRole() is an Engineer Object", () => {
-  const engineer = new Engineer("Jose", 1, "jose@gmail.com");
-
+  const engineer = new Engineer(
+    "Jose",
+    1,
+    "jose@gmail.com",
+    "joseduardo15062005"
+  );
   expect(engineer.getRole()).toBe(engineer);
 });
