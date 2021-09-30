@@ -1,7 +1,9 @@
-const Manager = require("./lib/Manager");
-const Engineer = require("./lib/Engineer");
-const Intern = require("./lib/Intern");
+const Team = require("./lib/Team");
 
-// let manager=;
-// let engineers = [];
-// let interns = [];
+function init() {
+  const team = new Team();
+
+  team.addManager();
+}
+
+init();
