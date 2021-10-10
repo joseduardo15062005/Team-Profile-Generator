@@ -63,7 +63,7 @@ function renderCardEngineers(engineers) {
             <div class="card-body">
                 <ul>
                     <li>Id: ${e.id}</li>
-                    <li>Email: <a href="mailto:${e.email}">${e.email}</a></li>
+                    <li>Email: <a href="mailto:${e.email}" target="_blank">${e.email}</a></li>
                     <li>Github: <a href="https://github.com/${e.github}" target="_blank">${e.github}</a></li>
                 </ul>
             </div>

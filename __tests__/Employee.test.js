@@ -6,10 +6,10 @@ test("name is a string and is not empty", () => {
   expect(employee.name).toBe("Jose");
 });
 
-test("id is a number diferent than 0", () => {
-  const employee = new Employee("Jose", 1);
+test("id is a unique string", () => {
+  const employee = new Employee("Jose", "sdkhfkfh");
 
-  expect(employee.id).toBeGreaterThanOrEqual(1);
+  expect(employee.id).toEqual(expect.any(String));
 });
 
 test("email is a valid email", () => {

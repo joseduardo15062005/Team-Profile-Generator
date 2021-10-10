@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "watch":"nodemon index.js"
   },
   "repository": {
     "type": "git",
